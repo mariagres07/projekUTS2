@@ -4,10 +4,6 @@
 
 package UTS;
 
-/**
- *
- * @author hp
- */
 public class Uts {
 
     public static void main(String[] args) {

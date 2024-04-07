@@ -1,6 +1,6 @@
-package UTS;
+package com.mycompany.uts;
 
-import UTS.Mahasiswa;
+import com.mycompany.uts.Mahasiswa;
 import java.util.Scanner;
 
 public class MainUts {
@@ -21,7 +21,7 @@ public class MainUts {
             System.out.println("Masukkan pilihan = ");
             int pilihan = in.nextInt();
             if (pilih == 1) {
-                Mahasiswa.TampilkanNilaiMahasiswa();
+//                Mahasiswa.TampilkanNilaiMahasiswa();
 
             } else if (pilih == 2) {
                 System.out.print("Masukkan jumlah Mahasiswa     : ");
@@ -31,7 +31,7 @@ public class MainUts {
                     System.out.println("Mahasiswa ke-" + (i + 1));
                     System.out.println("");
                 }
-                Mahasiswa.tambahNilai();
+//                Mahasiswa.tambahNilai();
             }
         } while (pilih < 1 && pilih > 2);
 

@@ -1,8 +1,7 @@
-package UTS;
+package com.mycompany.uts;
 
 public class Mahasiswa {
 
-    int jumlahMhs;
     String nama;
     String nim;
     double nilaiUts;
@@ -33,7 +32,7 @@ public class Mahasiswa {
         return nilaiUts;
     }
 
-    public void setNilaiUts(double nilaiUts) {// manusia
+    public void setNilaiUts(double nilaiUts) {
         this.nilaiUts = nilaiUts;
     }
 

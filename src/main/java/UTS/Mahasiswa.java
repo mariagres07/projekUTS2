@@ -33,7 +33,7 @@ public class Mahasiswa {
         return nilaiUts;
     }
 
-    public void setNilaiUts(double nilaiUts) {// manusia
+    public void setNilaiUts(double nilaiUts) {
         this.nilaiUts = nilaiUts;
     }
 

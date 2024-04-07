@@ -33,7 +33,7 @@ public class Mahasiswa {
         return nilaiUts;
     }
 
-    public void setNilaiUts(double nilaiUts) {
+    public void setNilaiUts(double nilaiUts) {//lala
         this.nilaiUts = nilaiUts;
     }
 

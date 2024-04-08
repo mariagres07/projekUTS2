@@ -56,16 +56,16 @@ public class Mahasiswa {
         return nilaiUas;
     }
 
-    //apa?
-    //yang kamu edit tadi apa aja?
-    //yang megre sama quick belum diinput juga
-    //netbeans kah?
-    // di sini di intellij
-    //nggak ada
-    //coba copy aja code nya
-    //send ke wa aja gapapa
-    //sampun
-    //loh iya kah?? lah di tempatku berubah weh coba kau update mar
-    //apa aku lupa push ya?
-    //class ini belum diubah kan?
 }
+//apa?
+//yang kamu edit tadi apa aja?
+//yang megre sama quick belum diinput juga
+//netbeans kah?
+// di sini di intellij
+//nggak ada
+//coba copy aja code nya
+//send ke wa aja gapapa
+//sampun
+//loh iya kah?? lah di tempatku berubah weh coba kau update mar
+//apa aku lupa push ya?
+    //class ini belum diubah kan?

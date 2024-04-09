@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Kelas {
 
-    public static Mahasiswa [] daftarMahasiswa;//aku ga tau ini untuk apa
-        //ini untuk array data mahasiswa si
+    public static Mahasiswa[] daftarMahasiswa;//aku ga tau ini untuk apa
+    //ini untuk array data mahasiswa si
     // nanti ketika mergesort dijalankan\
     // bakal memanggil array mahasiswa
     //melakukan switch urutan/indeks data ketika nilai seorang mahasiswa lebih tinggi atau lebih kecil daripada
@@ -13,14 +13,16 @@ public class Kelas {
     //untuk memanggil juga bisa si tapi gausah static langsung public bisa kah? jadi ga perlu static
     //untuk method yang memerlukan atribut objek itu
 
-
     //error di array nya, line 49
-
     public Kelas(Mahasiswa[] daftarMahasiswa) {//m. constructor
         this.daftarMahasiswa = daftarMahasiswa;//wait kalau ini dipisah dengan setter gimana?
     }
 
     public static void addPesertaDidik() {//m. input
+        double uh;
+        double uts;
+        double uas;
+        double nilaiTotal;
         Scanner scanner = new Scanner(System.in);
         /*System.out.println("Masukkan banyak mahasiswa = ");
         int banyakMhs = scanner.nextInt();*/
@@ -35,12 +37,22 @@ public class Kelas {
             String nama = scanner.nextLine();
             System.out.print("Masukkan Nim  : ");
             String Nim = scanner.nextLine();
-            System.out.print("Masukkan nilai uh  : ");
-            int uh = scanner.nextInt();
-            System.out.print("Masukkan nilai uts  : ");
-            int uts = scanner.nextInt();
-            System.out.print("Masukkan nilai uas  : ");
-            int uas = scanner.nextInt();
+            do {
+                System.out.print("Masukkan nilai uh  : ");
+                uh = scanner.nextInt();
+
+            } while (uh < 0 || uh > 100);
+            do {
+                System.out.print("Masukkan nilai uts  : ");
+                uts = scanner.nextInt();
+            } while (uts < 0 || uts > 100);
+            do {
+                System.out.print("Masukkan nilai uas  : ");
+                uas = scanner.nextInt();
+            } while (uas < 0 || uas > 100);
+
+            nilaiTotal = ((30 * uh) / 100) + ((30 * uts) / 100) + ((40 * uas) / 100);
+            System.out.println("Nilai total = " + nilaiTotal);
 
             System.out.println();
             scanner.nextLine();

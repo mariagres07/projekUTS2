@@ -25,6 +25,7 @@ public class MainUts {
                 jumlahMhs = in.nextInt();
 
                 Kelas.daftarMahasiswa = new Mahasiswa[jumlahMhs];
+                Kelas.addPesertaDidik();
                 //int[] mahasiswa = new int[jumlahMhs];//ini apa?
                 //yang ini kan sudah ada di class kelas jadi kubintang dulu yak
                 /*for (int i = 0; i < mahasiswa.length; i++) {

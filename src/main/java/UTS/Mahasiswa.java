@@ -7,13 +7,15 @@ public class Mahasiswa {
     double nilaiUts;
     double nilaiUas;
     double nilaiUh;
+    double nilaiTotal;
 
-    public Mahasiswa(String nama, String nim, double nilaiUh, double nilaiUts, double nilaiUas) {
+    public Mahasiswa(String nama, String nim, double nilaiUh, double nilaiUts, double nilaiUas, double nilaiTotal) {
         this.nama = nama;
         this.nim = nim;
         this.nilaiUh = nilaiUh;
         this.nilaiUts = nilaiUts;
         this.nilaiUas = nilaiUas;
+        this.nilaiTotal = nilaiTotal;
     }
 
     public String getNama() {
@@ -56,16 +58,12 @@ public class Mahasiswa {
         return nilaiUas;
     }
 
+    public void setNilaiTotal(double nilaiTotal) {
+        this.nilaiTotal = nilaiTotal;
+    }
+
+    public double getNilaiTotal() {
+        return nilaiTotal;
+    }
+
 }
-//apa?
-//yang kamu edit tadi apa aja?
-//yang megre sama quick belum diinput juga
-//netbeans kah?
-// di sini di intellij
-//nggak ada
-//coba copy aja code nya
-//send ke wa aja gapapa
-//sampun
-//loh iya kah?? lah di tempatku berubah weh coba kau update mar
-//apa aku lupa push ya?
-    //class ini belum diubah kan?

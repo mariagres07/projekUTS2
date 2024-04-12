@@ -22,43 +22,110 @@ public class Kelas {
         double uh;
         double uts;
         double uas;
-        double nilaiTotal;
+        String nama;
+        String nim;
+
         Scanner scanner = new Scanner(System.in);
-        /*System.out.println("Masukkan banyak mahasiswa = ");
-        int banyakMhs = scanner.nextInt();*/
-        // ini kuhapus ya karena untuk banyakMhs kita pakai length aja ya?
 
         System.out.println("Silahkan Masukkan Data Mahasiswa Anda:----------------------------------------------------------");
-        System.out.println();
+
         for (int i = 0; i < daftarMahasiswa.length; i++) {
             System.out.println();
             System.out.println("Mahasiswa ke - " + (i + 1) + " : ");
             System.out.print("Masukkan Nama Mahasiswa : ");
-            String nama = scanner.nextLine();
-            System.out.print("Masukkan Nim  : ");
-            String Nim = scanner.nextLine();
+            if (i > 0) {
+                nama = scanner.nextLine();
+                nama = scanner.nextLine();
+            } else {
+                nama = scanner.nextLine();
+            }
+            //add buffer
+            System.out.print("Masukkan NIM            : ");
+            nim = scanner.next();
             do {
-                System.out.print("Masukkan nilai uh  : ");
-                uh = scanner.nextInt();
+                System.out.print("Masukkan Nilai UH       : ");
+                uh = scanner.nextDouble();
 
             } while (uh < 0 || uh > 100);
             do {
-                System.out.print("Masukkan nilai uts  : ");
-                uts = scanner.nextInt();
+                System.out.print("Masukkan Nilai UTS      : ");
+                uts = scanner.nextDouble();
             } while (uts < 0 || uts > 100);
             do {
-                System.out.print("Masukkan nilai uas  : ");
-                uas = scanner.nextInt();
+                System.out.print("Masukkan Nilai UAS      : ");
+                uas = scanner.nextDouble();
             } while (uas < 0 || uas > 100);
 
-            nilaiTotal = ((30 * uh) / 100) + ((30 * uts) / 100) + ((40 * uas) / 100);
-            System.out.println("Nilai total = " + nilaiTotal);
+            double nilaiTotal = ((30 * uh) / 100) + ((30 * uts) / 100) + ((40 * uas) / 100);
 
-            System.out.println();
-            scanner.nextLine();
-            daftarMahasiswa[i] = new Mahasiswa(nama, Nim, uh, uts, uas);
+            daftarMahasiswa[i] = new Mahasiswa(nama, nim, uh, uts, uas, nilaiTotal);
 
         }
     }
 
+    public static void TampilkanNilaiMahasiswa() {
+
+        Scanner scanner = new Scanner(System.in);
+        int pilihin;
+        int pilih;
+        do {
+            System.out.println("1. Merge Sort");
+            System.out.println("2. Quick Sort");
+            pilihin = scanner.nextInt();
+
+            if (pilihin == 1) {
+                do {
+                    System.out.println("1. Ascending");
+                    System.out.println("2. Descending");
+                    System.out.println("Masukkan pilihan = ");
+                    pilih = scanner.nextInt();
+                    if (pilih == 1) {
+                        System.out.println("No\t\tNama\t\tNim\t\tUH\t\tUTS\t\tUAS\t\tNilai Total");
+                        for (int i = 0; i < daftarMahasiswa.length; i++) {
+                            System.out.printf("%-5s%-20s%-15s%-8.2f%-8.2f%-8.2f%-8.2f%n", (i + 1), daftarMahasiswa[i].getNama(),
+                                    daftarMahasiswa[i].getNim(), daftarMahasiswa[i].getNilaiUh(), daftarMahasiswa[i].getNilaiUts(),
+                                    daftarMahasiswa[i].getNilaiUas(), daftarMahasiswa[i].getNilaiTotal());
+                        }
+
+                    } else if (pilih == 2) {
+                        System.out.println("No\t\tNama\t\tNim\t\tUH\t\tUTS\t\tUAS\t\tNilai Total");
+                        for (int i = 0; i < daftarMahasiswa.length; i++) {
+                            System.out.printf("%-5s%-20s%-15s%-8.2f%-8.2f%-8.2f%-8.2f%n", (i + 1), daftarMahasiswa[i].getNama(),
+                                    daftarMahasiswa[i].getNim(), daftarMahasiswa[i].getNilaiUh(), daftarMahasiswa[i].getNilaiUts(),
+                                    daftarMahasiswa[i].getNilaiUas(), daftarMahasiswa[i].getNilaiTotal());
+                        }
+                    }
+                } while (pilih != 3);
+            } else if (pilihin == 2) {
+                do {
+                    System.out.println("1. Ascending");
+                    System.out.println("2. Descending");
+                    System.out.println("Masukkan pilihan = ");
+                    pilih = scanner.nextInt();
+                    if (pilih == 1) {
+                        System.out.println("No\t\tNama\t\tNim\t\tUH\t\tUTS\t\tUAS\t\tNilai Total");
+                        for (int i = 0; i < daftarMahasiswa.length; i++) {
+                            System.out.printf("%-5s%-20s%-15s%-8.2f%-8.2f%-8.2f%-8.2f%n", (i + 1), daftarMahasiswa[i].getNama(),
+                                    daftarMahasiswa[i].getNim(), daftarMahasiswa[i].getNilaiUh(), daftarMahasiswa[i].getNilaiUts(),
+                                    daftarMahasiswa[i].getNilaiUas(), daftarMahasiswa[i].getNilaiTotal());
+                        }
+
+                    } else if (pilih == 2) {
+                        System.out.println("No\t\tNama\t\tNim\t\tUH\t\tUTS\t\tUAS\t\tNilai Total");
+                        for (int i = 0; i < daftarMahasiswa.length; i++) {
+                            System.out.printf("%-5s%-20s%-15s%-8.2f%-8.2f%-8.2f%-8.2f%n", (i + 1), daftarMahasiswa[i].getNama(),
+                                    daftarMahasiswa[i].getNim(), daftarMahasiswa[i].getNilaiUh(), daftarMahasiswa[i].getNilaiUts(),
+                                    daftarMahasiswa[i].getNilaiUas(), daftarMahasiswa[i].getNilaiTotal());
+                        }
+                    }
+                } while (pilih != 3);
+            }
+        } while (pilihin != 3);
+
+        //opsi nilai terurut dari besar ke terkecil, kecil ke terbesar?
+    }
+
+    // ascending
+    // descending
+    // perulangan input data
 }
